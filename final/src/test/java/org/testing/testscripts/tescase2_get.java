@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.testing.responsevalidation.responsecodesoftvalidate;
 import org.testing.teststeps.httpmethods;
 import org.testing.utilities.jsonparsingusingorgjson;
 import org.testing.utilities.propertieshandle;
@@ -18,7 +19,8 @@ public class tescase2_get
 	{
 		Properties pr=propertieshandle.loadpropertieshandle("../final/uri.properties");
 		httpmethods http=new httpmethods(pr);
-		http.get("def");
+		Response res=http.get("def");
+		responsecodesoftvalidate.response(res, 200);
 	}
 	@Test
 	public static void tc3() throws FileNotFoundException, IOException
@@ -27,5 +29,6 @@ public class tescase2_get
 		httpmethods getall=new httpmethods(pr);
 		Response res=getall.getall("def");
 		jsonparsingusingorgjson.jsonparse(res.asString(), "id");
+		responsecodesoftvalidate.response(res, 200);
 	}
 }

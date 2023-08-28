@@ -27,7 +27,7 @@ public class httpmethods
 				.when()
 				.post(urivalue);
 		
-		System.out.println(res.statusCode());
+		///////////System.out.println(res.statusCode());
 		System.out.println(res.asString());
 		return res;
 	}
@@ -41,7 +41,7 @@ public class httpmethods
 				.when()
 				.get(urivalue);
 		
-		System.out.println(res.statusCode());
+		////////System.out.println(res.statusCode());
 		System.out.println(res.asString());
 		return res;
 	}
