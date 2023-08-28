@@ -30,4 +30,17 @@ public class httpmethods
 		System.out.println(res.statusCode());
 		System.out.println(res.asString());
 	}
+	public static void get(String urikeyname)
+	{
+		String urivalue=pr.getProperty(urikeyname);
+		
+		Response res=
+				given()
+				.contentType(ContentType.JSON)
+				.when()
+				.get(urivalue);
+		
+		System.out.println(res.statusCode());
+		System.out.println(res.asString());
+	}
 }

@@ -22,6 +22,6 @@ public class testcase1_post
 		Integer input=r.nextInt();
 		String data=replacevalue.replace("id", responsedata, input.toString());
 		httpmethods http=new httpmethods(pr);
-		http.post("default", data);
+		http.post("def", data);
 	}
 }
