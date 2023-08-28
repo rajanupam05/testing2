@@ -16,7 +16,7 @@ public class httpmethods
 	{
 		this.pr=pr;
 	}
-	public static void post(String urikeyname, String responsedata)
+	public static Response post(String urikeyname, String responsedata)
 	{
 		String urivalue=pr.getProperty(urikeyname);
 		
@@ -29,8 +29,9 @@ public class httpmethods
 		
 		System.out.println(res.statusCode());
 		System.out.println(res.asString());
+		return res;
 	}
-	public static void get(String urikeyname)
+	public static Response get(String urikeyname)
 	{
 		String urivalue=pr.getProperty(urikeyname);
 		
@@ -41,6 +42,33 @@ public class httpmethods
 				.get(urivalue);
 		
 		System.out.println(res.statusCode());
+		System.out.println(res.asString());
+		return res;
+	}
+	public static Response getall(String urikeyname)
+	{
+		String urivalue=pr.getProperty(urikeyname);
+		
+		Response res=
+				given()
+				.contentType(ContentType.JSON)
+				.when()
+				.get(urivalue);
+		
+		///System.out.println(res.statusCode());
+		///System.out.println(res.asString());
+		return res;
+	}
+	public static void getparticular(String urikeyname, String endpoint)
+	{
+		String urivalue=pr.getProperty(urikeyname)+"/"+endpoint;
+		
+		Response res=
+				given()
+				.contentType(ContentType.JSON)
+				.when()
+				.get(urivalue);
+		
 		System.out.println(res.asString());
 	}
 }

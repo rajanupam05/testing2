@@ -5,6 +5,7 @@
     <classes>
       <class name="org.testing.testscripts.testcase1_post"/>
       <class name="org.testing.testscripts.tescase2_get"/>
+      <class name="org.testing.testscripts.testcase3_getparticular"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
