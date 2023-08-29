@@ -6,6 +6,7 @@ import java.util.Properties;
 import java.util.Random;
 
 import org.testing.responsevalidation.responsecodevalidate;
+import org.testing.responsevalidation.responsedatavalidate;
 import org.testing.teststeps.httpmethods;
 import org.testing.utilities.jsonhandle;
 import org.testing.utilities.jsonparsingusingorgjson;
@@ -29,6 +30,7 @@ public class testcase1_post
 		httpmethods http=new httpmethods(pr);
 		Response res=http.post("def", data);
 		responsecodevalidate.responsevalidate(201, res.statusCode());
+		responsedatavalidate.responsevalidate("name", res, "anupam");
 		returnidvalue=jsonparsingusingorgjson.jsonparse2("id", res.asString());
 	}
 }

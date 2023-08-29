@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-28T21:07:01Z" name="Suite" finished-at="2023-08-28T21:07:03Z" duration-ms="2518">
+  <suite started-at="2023-08-29T18:20:27Z" name="Suite" finished-at="2023-08-29T18:20:31Z" duration-ms="3955">
     <groups>
     </groups>
-    <test started-at="2023-08-28T21:07:01Z" name="Test" finished-at="2023-08-28T21:07:03Z" duration-ms="2518">
+    <test started-at="2023-08-29T18:20:27Z" name="Test" finished-at="2023-08-29T18:20:31Z" duration-ms="3955">
       <class name="org.testing.testscripts.tescase2_get">
-        <test-method signature="tc2()[pri:0, instance:org.testing.testscripts.tescase2_get@1115ec15]" started-at="2023-08-29T02:37:03Z" name="tc2" finished-at="2023-08-29T02:37:03Z" duration-ms="81" status="PASS">
+        <test-method signature="tc2()[pri:0, instance:org.testing.testscripts.tescase2_get@1115ec15]" started-at="2023-08-29T23:50:30Z" name="tc2" finished-at="2023-08-29T23:50:31Z" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2 -->
-        <test-method signature="tc3()[pri:0, instance:org.testing.testscripts.tescase2_get@1115ec15]" started-at="2023-08-29T02:37:03Z" name="tc3" finished-at="2023-08-29T02:37:03Z" duration-ms="71" status="PASS">
+        <test-method signature="tc3()[pri:0, instance:org.testing.testscripts.tescase2_get@1115ec15]" started-at="2023-08-29T23:50:31Z" name="tc3" finished-at="2023-08-29T23:50:31Z" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc3 -->
       </class> <!-- org.testing.testscripts.tescase2_get -->
-      <class name="org.testing.testscripts.testcase1_post">
-        <test-method signature="tc1()[pri:0, instance:org.testing.testscripts.testcase1_post@3f67593e]" started-at="2023-08-29T02:37:01Z" name="tc1" finished-at="2023-08-29T02:37:03Z" duration-ms="2259" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc1 -->
-      </class> <!-- org.testing.testscripts.testcase1_post -->
       <class name="org.testing.testscripts.testcase3_getparticular">
-        <test-method signature="tc3()[pri:0, instance:org.testing.testscripts.testcase3_getparticular@82ea68c]" started-at="2023-08-29T02:37:03Z" name="tc3" finished-at="2023-08-29T02:37:03Z" duration-ms="63" status="PASS">
+        <test-method signature="tc3()[pri:0, instance:org.testing.testscripts.testcase3_getparticular@82ea68c]" started-at="2023-08-29T23:50:31Z" name="tc3" finished-at="2023-08-29T23:50:31Z" duration-ms="62" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc3 -->
       </class> <!-- org.testing.testscripts.testcase3_getparticular -->
+      <class name="org.testing.testscripts.testcase1_post">
+        <test-method signature="tc1()[pri:0, instance:org.testing.testscripts.testcase1_post@3f67593e]" started-at="2023-08-29T23:50:27Z" name="tc1" finished-at="2023-08-29T23:50:30Z" duration-ms="3595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+      </class> <!-- org.testing.testscripts.testcase1_post -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
